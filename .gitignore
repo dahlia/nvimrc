@@ -1,0 +1,7 @@
+vim/colors/ir_black.vim
+vim/syntax/mkd.vim
+vim/syntax/jinja.vim
+vim/syntax/htmljinja.vim
+vim/syntax/haml.vim
+vim/syntax/sass.vim
+.*.swp
