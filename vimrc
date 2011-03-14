@@ -49,12 +49,16 @@ setlocal spell spelllang=en_us
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
+"gVim-specific configurations (including MacVim).
+if has("gui")
+  colorscheme ir_black
+  set guioptions=egmrLt
+endif
+
 "MacVim-specific configurations.
 if has("gui_macvim")
   set imd
-  set guifont=Bitstream_Vera_Sans_Mono:h12.00
-  colorscheme ir_black
   set transparency=10
-  set guioptions=egmrLt
+  set guifont=Bitstream_Vera_Sans_Mono:h12.00
 endif
 
