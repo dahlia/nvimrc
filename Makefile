@@ -22,5 +22,6 @@ download_syntax:
 		 http://www.vim.org/scripts/download_script.php?src_id=8461 \
 		 -o haml.vim \
 		 http://www.vim.org/scripts/download_script.php?src_id=7447 \
-		 -o sass.vim
+		 -o sass.vim \
+		 http://leafo.net/lessphp/vim/less.vim -o less.vim
 

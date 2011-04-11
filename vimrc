@@ -24,6 +24,7 @@ set mouse=a
 au! BufRead,BufNewFile *.wsgi setfiletype python
 au! BufRead,BufNewFile *.sass setfiletype sass
 au! BufRead,BufNewFile *.haml setfiletype haml
+au! BufRead,BufNewFile *.less setfiletype less
 
 "These languages have their own tab/indent settings.
 au FileType cpp    setl ts=2 sw=2 sts=2
