@@ -1,7 +1,15 @@
 
 install: download
-	ln -s `pwd`/vimrc $$HOME/.vimrc
-	ln -s `pwd`/vim $$HOME/.vim
+	if [ -f $$HOME/.vimrc ]; then \
+		echo; \
+	else \
+		ln -s `pwd`/vimrc $$HOME/.vimrc; \
+	fi
+	if [ -d $$HOME/.vim ]; then \
+		echo; \
+	else \
+		ln -s `pwd`/vim $$HOME/.vim; \
+	fi
 
 download: download_colors download_syntax
 
