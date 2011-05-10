@@ -38,13 +38,13 @@ au FileType make   setl ts=4 sw=4 sts=4 noet
 
 "Markdown-related configurations.
 augroup mkd
-  autocmd BufRead *.markdown set formatoptions=tcroqn2 comments=n:>
-  autocmd BufRead *.mkdn     set formatoptions=tcroqn2 comments=n:>
-  autocmd BufRead *.mkd      set formatoptions=tcroqn2 comments=n:>
+  autocmd BufRead *.markdown set formatoptions=tcroqn2 comments=n:> spell
+  autocmd BufRead *.mkdn     set formatoptions=tcroqn2 comments=n:> spell
+  autocmd BufRead *.mkd      set formatoptions=tcroqn2 comments=n:> spell
 augroup END
 
 "English spelling checker.
-setlocal spell spelllang=en_us
+setlocal spelllang=en_us
 
 "Keep 80 columns.
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
