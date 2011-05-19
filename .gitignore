@@ -5,5 +5,6 @@ vim/syntax/htmljinja.vim
 vim/syntax/haml.vim
 vim/syntax/sass.vim
 vim/syntax/less.vim
+vim/after/syntax/css.vim
 vim/.netrwhist
 .*.swp

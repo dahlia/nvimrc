@@ -33,3 +33,9 @@ download_syntax:
 		 -o sass.vim \
 		 http://leafo.net/lessphp/vim/less.vim -o less.vim
 
+download_after_syntax:
+	mkdir -p vim/after/syntax/; \
+	cd vim/after/syntax/; \
+	curl http://www.vim.org/scripts/download_script.php?src_id=8846 \
+	     -o css.vim
+
