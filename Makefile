@@ -11,7 +11,7 @@ install: download
 		ln -s `pwd`/vim $$HOME/.vim; \
 	fi
 
-download: download_colors download_syntax
+download: download_colors download_syntax download_after_syntax
 
 download_colors:
 	mkdir -p vim/colors/; \
