@@ -37,5 +37,6 @@ download_after_syntax:
 	mkdir -p vim/after/syntax/; \
 	cd vim/after/syntax/; \
 	curl http://www.vim.org/scripts/download_script.php?src_id=8846 \
-	     -o css.vim
+	     -o css.vim; \
+	ln -s `pwd`/css.vim `pwd`/less.vim
 
