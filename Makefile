@@ -16,7 +16,8 @@ download: download_colors download_syntax download_after_syntax
 download_colors:
 	mkdir -p vim/colors/; \
 	cd vim/colors/; \
-	curl -O http://blog.toddwerth.com/entry_files/8/ir_black.vim
+	curl http://www.vim.org/scripts/download_script.php?src_id=11274 \
+	     -o Mustang.vim
 
 download_syntax:
 	mkdir -p vim/syntax/; \
@@ -38,5 +39,9 @@ download_after_syntax:
 	cd vim/after/syntax/; \
 	curl http://www.vim.org/scripts/download_script.php?src_id=8846 \
 	     -o css.vim; \
-	ln -s `pwd`/css.vim `pwd`/less.vim
+	if [ -f `pwd`/less.vim ]; then \
+		echo; \
+	else \
+		ln -s `pwd`/css.vim `pwd`/less.vim; \
+	fi
 

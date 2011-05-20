@@ -52,7 +52,7 @@ match OverLength /\%81v.\+/
 
 "gVim-specific configurations (including MacVim).
 if has("gui")
-  colorscheme ir_black
+  colorscheme Mustang
   set guioptions=egmrLt
 endif
 
