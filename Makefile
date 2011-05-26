@@ -33,7 +33,8 @@ download_syntax:
 		 -o haml.vim \
 		 http://www.vim.org/scripts/download_script.php?src_id=7447 \
 		 -o sass.vim \
-		 http://leafo.net/lessphp/vim/less.vim -o less.vim
+		 -O http://leafo.net/lessphp/vim/less.vim \
+		 https://gist.github.com/raw/256840/html5.vim -o html.vim
 
 download_after_syntax:
 	mkdir -p vim/after/syntax/; \
