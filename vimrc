@@ -1,3 +1,6 @@
+"Pathogen
+call pathogen#runtime_append_all_bundles()
+
 "Syntax highlighting.
 syntax on
 
@@ -62,4 +65,19 @@ if has("gui_macvim")
   set transparency=10
   set guifont=Bitstream_Vera_Sans_Mono:h12.00
 endif
+
+"Gundo -- Undo tree visualization
+let g:gundo_right = 1
+function s:MinheeGundoToggle()
+  let l:visible = bufwinnr(bufnr("__Gundo__")) != -1
+  let l:visible = l:visible || bufwinnr(bufnr("__Gundo_Preview__")) != -1
+  if l:visible
+    let &columns -= g:gundo_width + 1
+  else
+    let &columns += g:gundo_width + 1
+  endif
+  GundoToggle
+endfunction
+command! -nargs=0 MinheeGundoToggle call s:MinheeGundoToggle()
+nnoremap <F5> :MinheeGundoToggle<CR>
 

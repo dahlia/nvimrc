@@ -11,7 +11,8 @@ install: download
 		ln -s `pwd`/vim $$HOME/.vim; \
 	fi
 
-download: download_colors download_syntax download_after_syntax
+download: download_colors download_syntax download_after_syntax \
+ download_autoload
 
 download_colors:
 	mkdir -p vim/colors/; \
@@ -44,4 +45,10 @@ download_after_syntax:
 	else \
 		ln -s `pwd`/css.vim `pwd`/less.vim; \
 	fi
+
+download_autoload:
+	mkdir -p vim/autoload/; \
+	cd vim/autoload/; \
+	curl http://www.vim.org/scripts/download_script.php?src_id=15192 \
+		 -o pathogen.vim
 
