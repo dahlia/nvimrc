@@ -16,13 +16,14 @@ download: download_colors download_syntax download_autoload
 download_colors:
 	mkdir -p vim/colors/; \
 	cd vim/colors/; \
-	curl http://www.vim.org/scripts/download_script.php?src_id=11274 \
+	curl -L http://www.vim.org/scripts/download_script.php?src_id=11274 \
 	     -o Mustang.vim
 
 download_syntax:
 	mkdir -p vim/syntax/; \
 	cd vim/syntax/; \
-	curl http://www.vim.org/scripts/download_script.php?src_id=10630 \
+	curl -L \
+	     http://www.vim.org/scripts/download_script.php?src_id=10630 \
 	     -o mkd.vim \
 	     http://www.vim.org/scripts/download_script.php?src_id=8666 \
 	     -o jinja.vim \
@@ -38,7 +39,7 @@ download_syntax:
 download_after_syntax:
 	mkdir -p vim/after/syntax/; \
 	cd vim/after/syntax/; \
-	curl http://www.vim.org/scripts/download_script.php?src_id=8846 \
+	curl -L http://www.vim.org/scripts/download_script.php?src_id=8846 \
 	     -o css.vim; \
 	if [ -f `pwd`/less.vim ]; then \
 		echo; \
@@ -49,6 +50,6 @@ download_after_syntax:
 download_autoload:
 	mkdir -p vim/autoload/; \
 	cd vim/autoload/; \
-	curl http://www.vim.org/scripts/download_script.php?src_id=15192 \
+	curl -L http://www.vim.org/scripts/download_script.php?src_id=15192 \
 		 -o pathogen.vim
 
