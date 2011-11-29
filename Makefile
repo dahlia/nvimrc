@@ -11,7 +11,7 @@ install: download
 		ln -s `pwd`/vim $$HOME/.vim; \
 	fi
 
-download: download_colors download_syntax download_autoload
+download: download_colors download_syntax download_autoload download_ftplugin
 
 download_colors:
 	mkdir -p vim/colors/; \
@@ -53,3 +53,8 @@ download_autoload:
 	curl -L http://www.vim.org/scripts/download_script.php?src_id=15192 \
 		 -o pathogen.vim
 
+download_ftplugin:
+	curl -L http://www.vim.org/scripts/download_script.php?src_id=14403 \
+	     -o pyflakes-vim.zip; \
+	unzip -d vim pyflakes-vim.zip ftplugin/*
+	rm pyflakes-vim.zip

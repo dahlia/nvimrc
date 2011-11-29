@@ -10,5 +10,6 @@ vim/syntax/html.vim
 vim/after/syntax/css.vim
 vim/after/syntax/less.vim
 vim/autoload/pathogen.vim
+vim/ftplugin
 vim/.netrwhist
 .*.swp
