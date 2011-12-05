@@ -56,7 +56,7 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
 "gVim-specific configurations (including MacVim).
-if has("gui")
+if has("gui_running")
   colorscheme Mustang
   set guioptions=egmrLt
 endif
