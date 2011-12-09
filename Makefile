@@ -17,7 +17,11 @@ download_colors:
 	mkdir -p vim/colors/; \
 	cd vim/colors/; \
 	curl -L http://www.vim.org/scripts/download_script.php?src_id=11274 \
-	     -o Mustang.vim
+	     -o Mustang.vim; \
+	cd ../../; \
+	git clone git://github.com/altercation/vim-colors-solarized.git; \
+	mv vim-colors-solarized/colors/solarized.vim vim/colors/; \
+	rm -rf vim-colors-solarized/
 
 download_syntax:
 	mkdir -p vim/syntax/; \

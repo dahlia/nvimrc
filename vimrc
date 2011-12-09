@@ -57,15 +57,15 @@ match OverLength /\%81v.\+/
 
 "gVim-specific configurations (including MacVim).
 if has("gui_running")
-  colorscheme Mustang
+  colorscheme solarized
+  set background=dark
   set guioptions=egmrLt
 endif
 
 "MacVim-specific configurations.
 if has("gui_macvim")
   set imd
-  set transparency=10
-  set guifont=Bitstream_Vera_Sans_Mono:h12.00
+  set guifont=DejaVu_Sans_Mono:h12.00
 endif
 
 "Gundo -- Undo tree visualization
