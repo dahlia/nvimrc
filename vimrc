@@ -60,6 +60,7 @@ if has("gui_running")
   colorscheme solarized
   set background=dark
   set guioptions=egmrLt
+  set linespace=1
 endif
 
 "MacVim-specific configurations.
