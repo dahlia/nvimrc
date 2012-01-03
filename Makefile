@@ -60,5 +60,8 @@ download_autoload:
 download_ftplugin:
 	curl -L http://www.vim.org/scripts/download_script.php?src_id=14403 \
 	     -o pyflakes-vim.zip; \
-	unzip -d vim pyflakes-vim.zip ftplugin/*
-	rm pyflakes-vim.zip
+	unzip -d vim pyflakes-vim.zip ftplugin/*; \
+	curl -L http://www.vim.org/scripts/download_script.php?src_id=17125 \
+	     -o vimclojure-2.3.1.zip; \
+	unzip -d vim vimclojure-2.3.1.zip; \
+	rm pyflakes-vim.zip vimclojure-2.3.1.zip
