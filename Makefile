@@ -11,6 +11,9 @@ install: download
 		ln -s `pwd`/vim $$HOME/.vim; \
 	fi
 
+uninstall:
+	rm $$HOME/.vimrc $$HOME/.vim
+
 download: download_colors download_syntax download_autoload download_ftplugin
 
 download_colors:
