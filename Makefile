@@ -14,7 +14,7 @@ install: download
 uninstall:
 	rm $$HOME/.vimrc $$HOME/.vim
 
-download: download_colors download_syntax download_autoload download_ftplugin
+download: download_colors download_syntax download_autoload download_plugin
 
 download_colors:
 	mkdir -p vim/colors/; \
@@ -59,6 +59,12 @@ download_autoload:
 	cd vim/autoload/; \
 	curl -L http://www.vim.org/scripts/download_script.php?src_id=15192 \
 		 -o pathogen.vim
+
+download_plugin: download_ftplugin
+	curl -L http://www.vim.org/scripts/download_script.php?src_id=17123 \
+	     -o nerdtree.zip; \
+	unzip -d vim nerdtree.zip; \
+	rm nerdtree.zip
 
 download_ftplugin:
 	curl -L http://www.vim.org/scripts/download_script.php?src_id=14403 \
