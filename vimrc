@@ -69,6 +69,11 @@ if has("gui_macvim")
   set guifont=DejaVu_Sans_Mono:h12.00
 endif
 
+"GVim under GNOME
+if has("gui_gnome")
+  set guifont="Ubuntu Mono 12"
+endif
+
 "Gundo -- Undo tree visualization
 let g:gundo_right = 1
 function s:MinheeGundoToggle()
