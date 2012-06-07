@@ -74,6 +74,11 @@ if has("gui_gnome")
   set guifont="Ubuntu Mono 12"
 endif
 
+"GVim under Windows
+if has("gui_win32")
+  set guifont=Consolas:h11:cANSI
+endif
+
 "Gundo -- Undo tree visualization
 let g:gundo_right = 1
 function s:MinheeGundoToggle()
