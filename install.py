@@ -1,5 +1,8 @@
 from contextlib import closing
-from ctypes import windll
+try:
+    from ctypes import windll
+except ImportError:
+    windll = None
 from os import environ, getcwd, mkdir, remove, rename, system
 try:
     from os import symlink
