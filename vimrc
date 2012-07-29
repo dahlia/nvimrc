@@ -66,7 +66,7 @@ endif
 "MacVim-specific configurations.
 if has("gui_macvim")
   set imd
-  set guifont=DejaVu_Sans_Mono:h12.00
+  set guifont=Droid_Sans_Mono:h12.00
 endif
 
 "GVim under GNOME
