@@ -52,6 +52,7 @@ augroup END
 setlocal spelllang=en_us
 
 "Keep 80 columns.
+set colorcolumn=80
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
