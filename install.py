@@ -154,6 +154,11 @@ def download_after_syntax():
     ensure_dir('vim/after/syntax')
     download_script(8846, 'vim/after/syntax/css.vim')
     copyfile('vim/after/syntax/css.vim', 'vim/after/syntax/less.vim')
+    download(
+        'https://raw.github.com/cakebaker/scss-syntax.vim'
+        '/master/syntax/scss.vim',
+        'vim/syntax/scss.vim'
+    )
 
 
 def download_autoload():

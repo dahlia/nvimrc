@@ -28,6 +28,7 @@ filetype plugin on
 "Some additional syntax highlighters.
 au! BufRead,BufNewFile *.wsgi setfiletype python
 au! BufRead,BufNewFile *.sass setfiletype sass
+au! BufRead,BufNewFile *.scss setfiletype scss
 au! BufRead,BufNewFile *.haml setfiletype haml
 au! BufRead,BufNewFile *.less setfiletype less
 
