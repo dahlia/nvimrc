@@ -56,7 +56,7 @@ else:
             remove(VIMRC)
         symlink(INSTALLED_VIMRC, VIMRC)
         if islink(VIMRUNTIME):
-            rmove(VIMRUNTIME)
+            remove(VIMRUNTIME)
         elif isdir(VIMRUNTIME):
             rmtree(VIMRUNTIME)
         symlink(INSTALLED_VIMRUNTIME, VIMRUNTIME)
