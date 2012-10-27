@@ -139,6 +139,7 @@ def download_colors():
 
 
 def download_syntax():
+    download_after_syntax()
     ensure_dir('vim/syntax')
     download_script(10630, 'vim/syntax/mkd.vim')
     download_script(8666, 'vim/syntax/jinja.vim')
@@ -148,17 +149,17 @@ def download_syntax():
     download('http://leafo.net/lessphp/vim/less.vim', 'vim/syntax/less.vim')
     download('https://gist.github.com/raw/256840/html5.vim',
              'vim/syntax/html.vim')
+    download(
+        'https://raw.github.com/cakebaker/scss-syntax.vim'
+        '/master/syntax/scss.vim',
+        'vim/syntax/scss.vim'
+    )
 
 
 def download_after_syntax():
     ensure_dir('vim/after/syntax')
     download_script(8846, 'vim/after/syntax/css.vim')
     copyfile('vim/after/syntax/css.vim', 'vim/after/syntax/less.vim')
-    download(
-        'https://raw.github.com/cakebaker/scss-syntax.vim'
-        '/master/syntax/scss.vim',
-        'vim/syntax/scss.vim'
-    )
 
 
 def download_autoload():
