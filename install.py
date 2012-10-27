@@ -3,7 +3,7 @@ try:
     from ctypes import windll
 except ImportError:
     windll = None
-from os import environ, getcwd, mkdir, remove, rename, system
+from os import environ, getcwd, mkdir, remove
 try:
     from os import symlink
 except ImportError:
@@ -11,7 +11,6 @@ except ImportError:
 from os.path import abspath, isdir, isfile, islink, join, split
 from shutil import copyfile, rmtree
 from StringIO import StringIO
-from subprocess import PIPE, Popen
 from sys import argv, platform, stderr
 from urllib2 import urlopen
 from zipfile import ZipFile
