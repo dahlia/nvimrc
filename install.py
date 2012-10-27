@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from contextlib import closing
 try:
     from ctypes import windll
