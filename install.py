@@ -136,6 +136,9 @@ def download_colors():
     download('https://raw.github.com/altercation/vim-colors-solarized/master'
              '/colors/solarized.vim',
             'vim/colors/solarized.vim')
+    download('https://raw.github.com/chrishunt/color-schemes/master'
+             '/railscasts/base16-railscasts.vim',
+             'vim/colors/base16-railscasts.vim')
 
 
 def download_syntax():
