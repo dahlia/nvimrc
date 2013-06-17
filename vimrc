@@ -71,7 +71,14 @@ endif
 "MacVim-specific configurations.
 if has("gui_macvim")
   set imd
-  set guifont=Droid_Sans_Mono:h12.00
+  let system_profiler_output=system("system_profiler | grep -i Retina")
+  if v:shell_error
+    "Non-Retina
+    set guifont=Source_Code_Pro_Light:h12.00
+  else
+    "Retina
+    set guifont=Droid_Sans_Mono:h12.00
+  endif
 endif
 
 "GVim under GNOME
