@@ -13,11 +13,9 @@ Required fonts
 
 It uses different fonts for each platform.
 
-- [Source Code Pro][] on Mac without Retina display
-- [Droid Sans Mono][] on Mac with Retina display
+- [Source Code Pro][] on Mac
 - [Ubuntu Mono][] on GNOME
 - Consolas on Windows, which is builtin
 
 [Source Code Pro]: http://sourceforge.net/projects/sourcecodepro.adobe/
-[Droid Sans Mono]: http://www.droidfonts.com/
 [Ubuntu Mono]: http://font.ubuntu.com/

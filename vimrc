@@ -77,7 +77,7 @@ if has("gui_macvim")
     set guifont=Source_Code_Pro_Light:h12.00
   else
     "Retina
-    set guifont=Droid_Sans_Mono:h12.00
+    set guifont=Source_Code_Pro_Light:h15.00
   endif
 endif
 
