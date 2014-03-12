@@ -23,6 +23,9 @@ set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp949,korea,iso-2022-kr
 "Use mouse.
 set mouse=a
 
+"More tabs
+set tabpagemax=25
+
 filetype plugin on
 
 "Some additional syntax highlighters.
