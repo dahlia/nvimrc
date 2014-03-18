@@ -10,7 +10,9 @@ set tabstop=4 shiftwidth=4 sts=4
 set autoindent
 
 "I dislike CRLF.
-set fileformat=unix
+if !exists("vimpager")
+  set fileformat=unix
+endif
 
 set backspace=2
 
