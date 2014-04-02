@@ -19,6 +19,9 @@ set backspace=2
 "Detect modeline hints.
 set modeline
 
+"Disable bell
+set visualbell t_vb=
+
 "Prefer UTF-8.
 set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp949,korea,iso-2022-kr
 
