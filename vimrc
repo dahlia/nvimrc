@@ -1,5 +1,33 @@
-"Pathogen
-call pathogen#runtime_append_all_bundles()
+"No compatibility to traditional vi
+set nocompatible
+
+"Vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+"Plugin list ------------------------------------------------------------------
+
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'Mustang2'
+Plugin 'Railscasts-Theme-GUIand256color'
+
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'Jinja'
+Plugin 'othree/html5.vim'
+if version < 704
+  Plugin 'JulesWang/css.vim'
+endif
+Plugin 'cakebaker/scss-syntax.vim'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'sjl/gundo.vim'
+
+"End plugin list --------------------------------------------------------------
+call vundle#end()
+filetype plugin indent on
 
 "Syntax highlighting.
 syntax on
@@ -8,6 +36,9 @@ syntax on
 set expandtab
 set tabstop=4 shiftwidth=4 sts=4
 set autoindent
+
+"set tab characters apart
+set listchars=tab:↹\
 
 "I dislike CRLF.
 if !exists("vimpager")
@@ -119,4 +150,3 @@ function s:MinheeTreeToggle()
 endfunction
 command! -nargs=0 MinheeTreeToggle call s:MinheeTreeToggle()
 nnoremap <F4> :MinheeTreeToggle<CR>
-
