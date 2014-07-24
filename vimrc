@@ -26,6 +26,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sjl/gundo.vim'
+Plugin 'davidhalter/jedi-vim'
 
 "End plugin list --------------------------------------------------------------
 call vundle#end()
