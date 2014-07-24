@@ -22,6 +22,7 @@ if version < 704
 endif
 Plugin 'cakebaker/scss-syntax.vim'
 
+Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sjl/gundo.vim'
 
