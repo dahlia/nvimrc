@@ -22,6 +22,7 @@ if version < 704
   Plugin 'JulesWang/css.vim'
 endif
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'stephpy/vim-yaml'
 
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
