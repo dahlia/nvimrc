@@ -13,6 +13,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Mustang2'
 Plugin 'Railscasts-Theme-GUIand256color'
 Plugin 'darktango.vim'
+Plugin 'junegunn/seoul256.vim'
 
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
