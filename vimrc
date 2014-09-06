@@ -114,7 +114,7 @@ if has("gui_running")
 endif
 
 "MacVim-specific configurations.
-if has("gui_macvim")
+if has("gui_macvim") || has("gui_vimr")
   set imd
   set guifont=Source_Code_Pro_Light:h16.00
 endif
