@@ -121,7 +121,7 @@ endif
 
 "GVim under GNOME
 if has("gui_gnome")
-  set guifont="Ubuntu Mono 12"
+  set guifont="Ubuntu Mono 11"
 endif
 
 "GVim under Windows
