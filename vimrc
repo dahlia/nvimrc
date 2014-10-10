@@ -17,8 +17,8 @@ Plugin 'junegunn/seoul256.vim'
 
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'Jinja'
 Plugin 'othree/html5.vim'
+Plugin 'lepture/vim-jinja'
 if version < 704
   Plugin 'JulesWang/css.vim'
 endif
@@ -41,7 +41,7 @@ syntax on
 "Softtab -- use spaces instead tabs.
 set expandtab
 set tabstop=4 shiftwidth=4 sts=4
-set autoindent
+set autoindent nosmartindent
 
 "set tab characters apart
 set listchars=tab:↹\
@@ -82,6 +82,7 @@ au FileType cpp    setl ts=2 sw=2 sts=2
 au FileType ruby   setl ts=2 sw=2 sts=2
 au FileType yaml   setl ts=2 sw=2 sts=2
 au FileType html   setl ts=2 sw=2 sts=2
+au FileType jinja  setl ts=2 sw=2 sts=2
 au FileType lua    setl ts=2 sw=2 sts=2
 au FileType haml   setl ts=2 sw=2 sts=2
 au FileType sass   setl ts=2 sw=2 sts=2
