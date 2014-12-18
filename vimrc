@@ -26,7 +26,8 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'stephpy/vim-yaml'
 
 Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/vimfiler.vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'rhysd/committia.vim'
@@ -145,15 +146,5 @@ endfunction
 command! -nargs=0 MinheeGundoToggle call s:MinheeGundoToggle()
 nnoremap <F5> :MinheeGundoToggle<CR>
 
-"NERDTree
-function s:MinheeTreeToggle()
-  let l:visible = bufwinnr(bufnr("NERD_tree_")) != -1
-  if l:visible
-    let &columns -= g:NERDTreeWinSize + 1
-  else
-    let &columns += g:NERDTreeWinSize + 1
-  endif
-  NERDTreeToggle
-endfunction
-command! -nargs=0 MinheeTreeToggle call s:MinheeTreeToggle()
-nnoremap <F4> :MinheeTreeToggle<CR>
+"Use Vimfiler as default explorer like netrw
+let g:vimfiler_as_default_explorer = 1
