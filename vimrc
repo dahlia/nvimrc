@@ -25,6 +25,7 @@ endif
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'stephpy/vim-yaml'
 Plugin 'cstrahan/vim-capnp'
+Plugin 'dag/vim2hs'
 
 Plugin 'scrooloose/syntastic'
 Plugin 'Shougo/unite.vim'
