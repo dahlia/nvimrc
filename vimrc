@@ -24,7 +24,7 @@ if version < 704
 endif
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'stephpy/vim-yaml'
-Plugin 'solarnz/thrift.vim'
+Plugin 'cstrahan/vim-capnp'
 
 Plugin 'scrooloose/syntastic'
 Plugin 'Shougo/unite.vim'
