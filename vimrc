@@ -23,6 +23,7 @@ if version < 704
   Plugin 'JulesWang/css.vim'
 endif
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'cespare/vim-toml'
 Plugin 'stephpy/vim-yaml'
 Plugin 'cstrahan/vim-capnp'
 Plugin 'dag/vim2hs'
