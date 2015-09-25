@@ -111,6 +111,9 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 autocmd WinEnter * match OverLength /\%81v.\+/
 
+"I dislike folding.
+set nofoldenable
+
 "gVim-specific configurations (including MacVim).
 if has("gui_running")
   colorscheme solarized
