@@ -95,6 +95,15 @@ au FileType scss   setl ts=2 sw=2 sts=2
 au FileType make   setl ts=4 sw=4 sts=4 noet
 au FileType gitcommit setl spell
 
+"Syntastic-related configurations.
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 "Markdown-related configurations.
 augroup mkd
   autocmd BufRead *.markdown set formatoptions=tcroqn2 comments=n:> spell
