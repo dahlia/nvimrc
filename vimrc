@@ -15,6 +15,7 @@ Plugin 'Railscasts-Theme-GUIand256color'
 Plugin 'darktango.vim'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'xoria256.vim'
+Plugin 'jdkanani/vim-material-theme'
 
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -125,8 +126,8 @@ set nofoldenable
 
 "gVim-specific configurations (including MacVim).
 if has("gui_running")
-  colorscheme solarized
-  set background=dark
+  set bg=dark
+  colorscheme material-theme
   set guioptions=egmrLt
   set linespace=1
 endif
