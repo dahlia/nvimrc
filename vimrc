@@ -37,6 +37,8 @@ Plugin 'sjl/gundo.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'rhysd/committia.vim'
 
+Plugin 'wakatime/vim-wakatime'
+
 "End plugin list --------------------------------------------------------------
 call vundle#end()
 filetype plugin indent on
