@@ -30,6 +30,7 @@ Plugin 'stephpy/vim-yaml'
 Plugin 'cstrahan/vim-capnp'
 Plugin 'dag/vim2hs'
 
+Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimfiler.vim'
