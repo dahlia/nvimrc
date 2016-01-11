@@ -151,6 +151,9 @@ if has("gui_win32")
   set guifont=Consolas:h11:cANSI
 endif
 
+"vim-airline
+let g:airline_powerline_fonts = 1
+
 "Gundo -- Undo tree visualization
 let g:gundo_right = 1
 function s:MinheeGundoToggle()
