@@ -34,7 +34,7 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimfiler.vim'
-Plugin 'sjl/gundo.vim'
+Plugin 'simnalamburt/vim-mundo'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'rhysd/committia.vim'
 
@@ -154,20 +154,10 @@ endif
 "vim-airline
 let g:airline_powerline_fonts = 1
 
-"Gundo -- Undo tree visualization
-let g:gundo_right = 1
-function s:MinheeGundoToggle()
-  let l:visible = bufwinnr(bufnr("__Gundo__")) != -1
-  let l:visible = l:visible || bufwinnr(bufnr("__Gundo_Preview__")) != -1
-  if l:visible
-    let &columns -= g:gundo_width + 1
-  else
-    let &columns += g:gundo_width + 1
-  endif
-  GundoToggle
-endfunction
-command! -nargs=0 MinheeGundoToggle call s:MinheeGundoToggle()
-nnoremap <F5> :MinheeGundoToggle<CR>
+"Mundo -- Undo tree visualization
+set undofile
+set undodir=~/.vim/undo
+nnoremap <F5> :MundoToggle
 
 "Use Vimfiler as default explorer like netrw
 let g:vimfiler_as_default_explorer = 1
