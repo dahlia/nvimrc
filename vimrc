@@ -29,6 +29,7 @@ Plugin 'cespare/vim-toml'
 Plugin 'stephpy/vim-yaml'
 Plugin 'cstrahan/vim-capnp'
 Plugin 'dag/vim2hs'
+Plugin 'pbrisbin/vim-syntax-shakespeare'
 
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
