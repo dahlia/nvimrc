@@ -1,10 +1,10 @@
 #!/bin/bash
 # Install neovim-python; vim-plug requires neovim-python
 if [[ "$(which pip2)" != "" ]]; then
-  pip2 install --user neovim
+  pip2 install --user neovim jedi
 fi
 if [[ "$(which pip3)" != "" ]]; then
-  pip3 install --user neovim
+  pip3 install --user neovim jedi
 fi
 
 # Install vim-plug
