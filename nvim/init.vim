@@ -1,49 +1,42 @@
 "No compatibility to traditional vi
 set nocompatible
 
-"Vundle
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+"vim-plug
+call plug#begin('~/.config/nvim/plugged')
 
 "Plugin list ------------------------------------------------------------------
 
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'Mustang2'
-Plugin 'Railscasts-Theme-GUIand256color'
-Plugin 'darktango.vim'
-Plugin 'junegunn/seoul256.vim'
-Plugin 'xoria256.vim'
-Plugin 'jdkanani/vim-material-theme'
+Plug 'altercation/vim-colors-solarized'
+Plug 'vim-scripts/Mustang2'
+Plug 'Railscasts-Theme-GUIand256color'
+Plug 'vim-scripts/darktango.vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'vim-scripts/xoria256.vim'
+Plug 'jdkanani/vim-material-theme'
 
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'othree/html5.vim'
-Plugin 'lepture/vim-jinja'
-if version < 704
-  Plugin 'JulesWang/css.vim'
-endif
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'cespare/vim-toml'
-Plugin 'stephpy/vim-yaml'
-Plugin 'cstrahan/vim-capnp'
-Plugin 'dag/vim2hs'
-Plugin 'pbrisbin/vim-syntax-shakespeare'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'othree/html5.vim'
+Plug 'lepture/vim-jinja'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'cespare/vim-toml'
+Plug 'stephpy/vim-yaml'
+Plug 'cstrahan/vim-capnp'
+Plug 'dag/vim2hs'
+Plug 'pbrisbin/vim-syntax-shakespeare'
 
-Plugin 'bling/vim-airline'
-Plugin 'scrooloose/syntastic'
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/vimfiler.vim'
-Plugin 'simnalamburt/vim-mundo'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'rhysd/committia.vim'
+Plug 'bling/vim-airline'
+Plug 'scrooloose/syntastic'
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/vimfiler.vim'
+Plug 'simnalamburt/vim-mundo'
+Plug 'davidhalter/jedi-vim'
+Plug 'rhysd/committia.vim'
 
-Plugin 'wakatime/vim-wakatime'
+Plug 'wakatime/vim-wakatime'
 
 "End plugin list --------------------------------------------------------------
-call vundle#end()
-filetype plugin indent on
+call plug#end()
 
 "Syntax highlighting.
 syntax on
@@ -72,9 +65,6 @@ set visualbell t_vb=
 "Prefer UTF-8.
 set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp949,korea,iso-2022-kr
 
-"Use mouse.
-set mouse=a
-
 "More tabs
 set tabpagemax=25
 
@@ -101,9 +91,6 @@ au FileType make   setl ts=4 sw=4 sts=4 noet
 au FileType gitcommit setl spell
 
 "Syntastic-related configurations.
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
@@ -160,7 +147,7 @@ let g:airline_powerline_fonts = 1
 
 "Mundo -- Undo tree visualization
 set undofile
-set undodir=~/.vim/undo
+set undodir=~/.config/nvim/undo
 nnoremap <F5> :MundoToggle
 
 "Use Vimfiler as default explorer like netrw

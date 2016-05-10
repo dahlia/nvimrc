@@ -1,11 +1,12 @@
-[Hong Minhee][]'s Vim settings
-==============================
+[Hong Minhee][]'s [Neovim][] settings
+=====================================
 
-It contains Vim settings used by Hong Minhee. How to install it is:
+It contains [Neovim] settings used by Hong Minhee. How to install it is:
 
     ./install.sh
 
-[Hong Minhee]: http://hongminhee.org
+[Hong Minhee]: https://hongminhee.org/
+[Neovim]: http://neovim.io/
 
 
 Required fonts

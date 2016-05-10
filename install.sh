@@ -1,11 +1,29 @@
 #!/bin/bash
-git submodule update --init
-src_vimrc="$(pwd)/$(dirname "$0")/vimrc"
-dst_vimrc="$HOME/.vimrc"
-if [[ ! -f "$HOME/.vimrc" || "$(cat "$src_vimrc")" != "$(cat "$dst_vimrc")" ]]
-then
-  ln -sfi "$src_vimrc" "$dst_vimrc"
-  ln -sfi "$(pwd)/$(dirname "$0")/vim" "$HOME/.vim"
+# Install neovim-python; vim-plug requires neovim-python
+if [[ "$(which pip2)" != "" ]]; then
+  pip2 install --user neovim
 fi
-vim +PluginInstall +qall
-vim +PluginClean! +qall
+if [[ "$(which pip3)" != "" ]]; then
+  pip3 install --user neovim
+fi
+
+# Install vim-plug
+VIM_PLUG_URL=https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir -p nvim/autoload
+curl -Lo nvim/autoload/plug.vim "$VIM_PLUG_URL"
+
+# Link neovim configuration to ~/.config/nvim
+nvimrc_name="init.nvim"
+src_nvim_dir="$(pwd)/$(dirname "$0")/nvim"
+src_nvimrc="$src_nvim_dir/$nvimrc_name"
+dst_nvim_dir="$HOME/.config/nvim"
+dst_nvimrc="$dst_nvim_dir/$nvimrc_name"
+echo "Neovim configuration directory: $dst_nvim_dir"
+if [[ ! -f "$dst_nvimrc" || "$(cat "$src_nvimrc")" != "$(cat "$dst_nvimrc")" ]]
+then
+  rm -f "$dst_nvim_dir"
+  ln -sfi "$src_nvim_dir" "$dst_nvim_dir"
+fi
+
+# Install plugins using vim-plug
+nvim +PlugInstall +PlugUpdate +PlugClean! +qall
