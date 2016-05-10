@@ -32,6 +32,10 @@ Plug 'Shougo/vimfiler.vim'
 Plug 'simnalamburt/vim-mundo'
 Plug 'davidhalter/jedi-vim'
 Plug 'rhysd/committia.vim'
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 
 Plug 'wakatime/vim-wakatime'
 
