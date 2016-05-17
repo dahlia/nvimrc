@@ -18,5 +18,5 @@ It uses different fonts for each platform.
 - [Ubuntu Mono][] on GNOME
 - Consolas on Windows, which is builtin
 
-[Source Code Pro]: http://sourceforge.net/projects/sourcecodepro.adobe/
+[Source Code Pro]: http://adobe-fonts.github.io/source-code-pro/
 [Ubuntu Mono]: http://font.ubuntu.com/
