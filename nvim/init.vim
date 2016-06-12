@@ -125,7 +125,6 @@ set novisualbell
 "gVim-specific configurations (including MacVim).
 if has("gui_running")
   set bg=dark
-  colorscheme material-theme
   set guioptions=egmrLt
   set linespace=1
 endif
@@ -156,3 +155,7 @@ nnoremap <F5> :MundoToggle
 
 "Use Vimfiler as default explorer like netrw
 let g:vimfiler_as_default_explorer = 1
+
+"Colorscheme
+colorscheme material-theme
+set background=dark

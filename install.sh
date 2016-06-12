@@ -23,9 +23,15 @@ echo "Neovim configuration directory: $dst_nvim_dir"
 if [[ ! -f "$dst_nvimrc" || "$(cat "$src_nvimrc")" != "$(cat "$dst_nvimrc")" ]]
 then
   rm -f "$dst_nvim_dir"
-  mkdir "$xdg_config_dir"
+  mkdir -p "$xdg_config_dir"
   ln -sfi "$src_nvim_dir" "$dst_nvim_dir"
 fi
 
 # Install plugins using vim-plug
 nvim +PlugInstall +PlugUpdate +PlugClean! +qall
+
+if [[ ! "$NVIM_TUI_ENABLE_TRUE_COLOR" ]]; then
+  echo "True color is not enabled;" \
+       "add the following command into your shell rc file:"
+  echo "  export NVIM_TUI_ENABLE_TRUE_COLOR=1"
+fi
