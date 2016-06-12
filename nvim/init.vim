@@ -107,6 +107,10 @@ augroup mkd
   autocmd BufRead *.mkd      set formatoptions=tcroqn2 comments=n:> spell
 augroup END
 
+"Haskell-related config
+let g:haskell_indent_guard = 4
+let g:haskell_indent_where = 2
+
 "English spelling checker.
 setlocal spelllang=en_us
 
