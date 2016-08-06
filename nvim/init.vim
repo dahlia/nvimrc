@@ -22,7 +22,7 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'cstrahan/vim-capnp'
-Plug 'neovimhaskell/haskell-vim'
+Plug 'dag/vim2hs'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
 Plug 'bling/vim-airline'
@@ -108,8 +108,10 @@ augroup mkd
 augroup END
 
 "Haskell-related config
-let g:haskell_indent_guard = 4
-let g:haskell_indent_where = 2
+let g:haskell_interpolation = 0
+let g:haskell_sql = 0
+let g:haskell_xml = 0
+let g:haskell_hsp = 0
 
 "English spelling checker.
 setlocal spelllang=en_us
