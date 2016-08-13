@@ -22,7 +22,6 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'cstrahan/vim-capnp'
-Plug 'dag/vim2hs'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
 Plug 'bling/vim-airline'
