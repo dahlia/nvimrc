@@ -1,6 +1,9 @@
 "No compatibility to traditional vi
 set nocompatible
 
+"True colors
+set termguicolors
+
 "vim-plug
 call plug#begin('~/.config/nvim/plugged')
 
