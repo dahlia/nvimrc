@@ -35,6 +35,7 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'davidhalter/jedi-vim'
 Plug 'rhysd/committia.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'tpope/vim-fugitive'
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
