@@ -174,3 +174,6 @@ let g:vimfiler_as_default_explorer = 1
 "Colorscheme
 colorscheme material-theme
 set background=dark
+
+"Alias :W to :w
+cnoreabbrev W w
