@@ -27,7 +27,7 @@ Plug 'stephpy/vim-yaml'
 Plug 'cstrahan/vim-capnp'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/syntastic'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimfiler.vim'
