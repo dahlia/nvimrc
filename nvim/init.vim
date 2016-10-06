@@ -28,7 +28,8 @@ Plug 'cstrahan/vim-capnp'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
 Plug 'vim-airline/vim-airline'
-Plug 'scrooloose/syntastic'
+Plug 'dahlia/ale', { 'branch': 'haskell-stack' }
+"Plug 'w0rp/ale'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimfiler.vim'
 Plug 'simnalamburt/vim-mundo'
@@ -99,11 +100,10 @@ au FileType scss   setl ts=2 sw=2 sts=2
 au FileType make   setl ts=4 sw=4 sts=4 noet
 au FileType gitcommit setl spell
 
-"Syntastic-related configurations.
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"ALE-related configurations.
+let g:ale_linters = {
+\    'haskell': ['stack-ghc', 'ghc'],
+\}
 
 "Markdown-related configurations.
 augroup mkd
