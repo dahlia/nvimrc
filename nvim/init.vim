@@ -42,6 +42,7 @@ function! DoRemote(arg)
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'zchee/deoplete-jedi'
+Plug 'junegunn/vim-slash'
 
 Plug 'wakatime/vim-wakatime'
 
