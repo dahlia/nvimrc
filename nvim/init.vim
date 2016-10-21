@@ -24,7 +24,7 @@ Plug 'lepture/vim-jinja'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
-Plug 'cstrahan/vim-capnp'
+Plug 'spoqa/nirum.vim'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
 Plug 'vim-airline/vim-airline'
