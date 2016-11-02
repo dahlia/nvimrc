@@ -45,6 +45,8 @@ endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'zchee/deoplete-jedi'
 Plug 'junegunn/vim-slash'
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'Shougo/vimshell.vim'
 
 Plug 'wakatime/vim-wakatime'
 
@@ -174,6 +176,10 @@ nnoremap <F5> :MundoToggle
 
 "Use Vimfiler as default explorer like netrw
 let g:vimfiler_as_default_explorer = 1
+
+"VimShell
+let g:vimshell_prompt_expr = '$USER . " " . fnamemodify(getcwd(), ":~") . " $ "'
+let g:vimshell_prompt_pattern = '^[a-z_-][a-z0-9_-]\{,31\} [~/][^$ ]* $ '
 
 "Colorscheme
 colorscheme material-theme
