@@ -35,14 +35,10 @@ Plug 'dahlia/ale', { 'branch': 'haskell-stack' }
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimfiler.vim'
 Plug 'simnalamburt/vim-mundo'
-Plug 'davidhalter/jedi-vim'
 Plug 'rhysd/committia.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'tpope/vim-fugitive'
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'junegunn/vim-slash'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
@@ -176,6 +172,9 @@ nnoremap <F5> :MundoToggle
 
 "Use Vimfiler as default explorer like netrw
 let g:vimfiler_as_default_explorer = 1
+
+"deoplete
+let g:deoplete#enable_at_startup = 1
 
 "VimShell
 let g:vimshell_prompt_expr = '$USER . " " . fnamemodify(getcwd(), ":~") . " $ "'
