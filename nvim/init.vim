@@ -28,6 +28,7 @@ Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'spoqa/nirum.vim'
 Plug 'pbrisbin/vim-syntax-shakespeare'
+Plug 'lambdatoast/elm.vim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'dahlia/ale', { 'branch': 'haskell-stack' }
@@ -99,6 +100,7 @@ au FileType haml   setl ts=2 sw=2 sts=2
 au FileType sass   setl ts=2 sw=2 sts=2
 au FileType scss   setl ts=2 sw=2 sts=2
 au FileType make   setl ts=4 sw=4 sts=4 noet
+au FileType elm    setl ts=2 sw=2 sts=2
 au FileType gitcommit setl spell
 
 "ALE-related configurations.
