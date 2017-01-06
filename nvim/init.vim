@@ -44,6 +44,7 @@ Plug 'zchee/deoplete-jedi'
 Plug 'junegunn/vim-slash'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Shougo/vimshell.vim'
+Plug 'junegunn/vim-easy-align'
 
 Plug 'wakatime/vim-wakatime'
 
@@ -179,6 +180,10 @@ let g:vimfiler_as_default_explorer = 1
 
 "deoplete
 let g:deoplete#enable_at_startup = 1
+
+"vim-easy-align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 "VimShell
 let g:vimshell_prompt_expr = '$USER . " " . fnamemodify(getcwd(), ":~") . " $ "'
