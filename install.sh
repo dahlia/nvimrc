@@ -29,9 +29,3 @@ fi
 
 # Install plugins using vim-plug
 nvim +PlugInstall +PlugUpdate +PlugClean! +qall
-
-if [[ ! "$NVIM_TUI_ENABLE_TRUE_COLOR" ]]; then
-  echo "True color is not enabled;" \
-       "add the following command into your shell rc file:"
-  echo "  export NVIM_TUI_ENABLE_TRUE_COLOR=1"
-fi
