@@ -1,11 +1,6 @@
 "No compatibility to traditional vi
 set nocompatible
 
-"True colors
-if $TERM_PROGRAM == "iTerm.app"
-  set termguicolors
-endif
-
 "vim-plug
 call plug#begin('~/.config/nvim/plugged')
 
@@ -189,9 +184,15 @@ nmap ga <Plug>(EasyAlign)
 let g:vimshell_prompt_expr = '$USER . " " . fnamemodify(getcwd(), ":~") . " $ "'
 let g:vimshell_prompt_pattern = '^[a-z_-][a-z0-9_-]\{,31\} [~/][^$ ]* $ '
 
-"Colorscheme
-colorscheme material-theme
-set background=dark
+"True colors
+if $TERM_PROGRAM == "iTerm.app"
+  set termguicolors
+  colorscheme material-theme
+  set background=dark
+else
+  colorscheme seoul256
+  set background=dark
+endif
 
 "Alias :W to :w
 cnoreabbrev W w
