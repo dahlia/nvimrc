@@ -26,8 +26,7 @@ Plug 'pbrisbin/vim-syntax-shakespeare'
 Plug 'elmcast/elm-vim'
 
 Plug 'vim-airline/vim-airline'
-Plug 'dahlia/ale', { 'branch': 'haskell-stack' }
-"Plug 'w0rp/ale'
+Plug 'w0rp/ale'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimfiler.vim'
 Plug 'simnalamburt/vim-mundo'
