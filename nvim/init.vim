@@ -8,7 +8,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-scripts/Mustang2'
-Plug 'Railscasts-Theme-GUIand256color'
 Plug 'vim-scripts/darktango.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'vim-scripts/xoria256.vim'
