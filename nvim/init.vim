@@ -39,6 +39,7 @@ Plug 'junegunn/vim-slash'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Shougo/vimshell.vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'sgur/vim-editorconfig'
 
 Plug 'wakatime/vim-wakatime'
 
