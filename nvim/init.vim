@@ -45,6 +45,8 @@ Plug 'wakatime/vim-wakatime'
 "End plugin list --------------------------------------------------------------
 call plug#end()
 
+language en_US
+
 "Syntax highlighting.
 syntax on
 
