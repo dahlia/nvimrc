@@ -14,6 +14,7 @@ Plug 'vim-scripts/xoria256.vim'
 Plug 'jdkanani/vim-material-theme'
 
 Plug 'godlygeek/tabular'
+Plug 'achimnol/python-syntax'
 Plug 'plasticboy/vim-markdown'
 Plug 'othree/html5.vim'
 Plug 'lepture/vim-jinja'
@@ -103,6 +104,18 @@ au FileType gitcommit setl spell
 let g:ale_linters = {
 \    'haskell': ['stack-ghc', 'ghc'],
 \}
+
+"Python-related configurations.
+"See also: https://github.com/achimnol/python-syntax#options-used-by-the-script
+let python_highlight_builtins = 1
+let python_highlight_type_annotations = 1
+let python_highlight_exceptions = 1
+let python_highlight_string_formatting = 1
+let python_highlight_string_format = 1
+let python_highlight_string_templates = 0
+let python_highlight_indent_errors = 1
+let python_highlight_space_errors = 0
+let python_highlight_doctests = 1
 
 "Markdown-related configurations.
 augroup mkd
