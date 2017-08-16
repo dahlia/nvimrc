@@ -102,7 +102,7 @@ au FileType gitcommit setl spell
 
 "ALE-related configurations.
 let g:ale_linters = {
-\    'haskell': ['stack-ghc', 'ghc'],
+\    'haskell': ['stack-build', 'hlint'],
 \}
 
 "Python-related configurations.
