@@ -24,6 +24,7 @@ Plug 'stephpy/vim-yaml'
 Plug 'spoqa/nirum.vim'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 Plug 'elmcast/elm-vim'
+Plug 'rust-lang/rust.vim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
@@ -103,6 +104,7 @@ au FileType gitcommit setl spell
 "ALE-related configurations.
 let g:ale_linters = {
 \    'haskell': ['stack-build', 'hlint'],
+\    'rust': ['cargo'],
 \}
 
 "Python-related configurations.
