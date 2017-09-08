@@ -12,6 +12,7 @@ Plug 'vim-scripts/darktango.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'vim-scripts/xoria256.vim'
 Plug 'jdkanani/vim-material-theme'
+Plug 'rakr/vim-one'
 
 Plug 'godlygeek/tabular'
 Plug 'achimnol/python-syntax'
