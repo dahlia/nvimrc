@@ -27,6 +27,7 @@ Plug 'pbrisbin/vim-syntax-shakespeare'
 Plug 'elmcast/elm-vim'
 Plug 'rust-lang/rust.vim'
 
+Plug 'lifthrasiir/hangeul.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
 Plug 'Shougo/unite.vim'
@@ -49,6 +50,10 @@ Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 language en_US
+
+"Enable hangeul.vim
+let hangeul_enabled = 1
+let hangeul_hanja_path = resolve(expand('<sfile>:p:h:h') . '/hanja.txt')
 
 "Syntax highlighting.
 syntax on

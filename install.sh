@@ -12,6 +12,10 @@ VIM_PLUG_URL=https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 mkdir -p nvim/autoload
 curl -Lo nvim/autoload/plug.vim "$VIM_PLUG_URL"
 
+# Download hanja.txt
+curl -Lo hanja.txt \
+     https://github.com/choehwanjin/libhangul/raw/master/data/hanja/hanja.txt
+
 # Link neovim configuration to ~/.config/nvim
 xdg_config_dir="$HOME/.config"
 nvimrc_name="init.nvim"
