@@ -113,6 +113,8 @@ let g:ale_linters = {
 \    'haskell': ['stack-build', 'hlint'],
 \    'rust': ['cargo'],
 \}
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 "Python-related configurations.
 "See also: https://github.com/achimnol/python-syntax#options-used-by-the-script
