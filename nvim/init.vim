@@ -26,6 +26,7 @@ Plug 'spoqa/nirum.vim'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 Plug 'elmcast/elm-vim'
 Plug 'rust-lang/rust.vim'
+Plug 'leafgarland/typescript-vim'
 
 Plug 'lifthrasiir/hangeul.vim'
 Plug 'vim-airline/vim-airline'
