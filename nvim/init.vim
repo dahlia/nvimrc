@@ -111,7 +111,7 @@ au FileType gitcommit setl spell
 
 "ALE-related configurations.
 let g:ale_linters = {
-\    'haskell': ['stack-build', 'hlint'],
+\    'haskell': ['stack-ghc-mod', 'hlint'],
 \    'rust': ['cargo'],
 \}
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
