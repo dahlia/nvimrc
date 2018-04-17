@@ -211,7 +211,7 @@ let g:vimshell_prompt_expr = '$USER . " " . fnamemodify(getcwd(), ":~") . " $ "'
 let g:vimshell_prompt_pattern = '^[a-z_-][a-z0-9_-]\{,31\} [~/][^$ ]* $ '
 
 "True colors
-if $TERM_PROGRAM == "iTerm.app"
+if $TERM_PROGRAM == "iTerm.app" || has("gui_vimr")
   set termguicolors
   colorscheme material-theme
   set background=dark
