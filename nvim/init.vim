@@ -14,6 +14,7 @@ Plug 'vim-scripts/xoria256.vim'
 Plug 'jdkanani/vim-material-theme'
 Plug 'rakr/vim-one'
 
+Plug 'neovimhaskell/haskell-vim'
 Plug 'godlygeek/tabular'
 Plug 'achimnol/python-syntax'
 Plug 'plasticboy/vim-markdown'
