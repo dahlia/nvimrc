@@ -111,6 +111,12 @@ au FileType make   setl ts=4 sw=4 sts=4 noet
 au FileType rst    setl spell
 au FileType gitcommit setl spell
 
+"Terminal-related configurations.
+tnoremap <C-w>h <C-\><C-N><C-w>h
+tnoremap <C-w>j <C-\><C-N><C-w>j
+tnoremap <C-w>k <C-\><C-N><C-w>k
+tnoremap <C-w>l <C-\><C-N><C-w>l
+
 "ALE-related configurations.
 let g:ale_linters = {
 \    'haskell': ['stack-ghc-mod', 'hlint'],
