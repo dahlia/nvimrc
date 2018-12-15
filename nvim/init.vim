@@ -29,6 +29,7 @@ Plug 'elmcast/elm-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'tomlion/vim-solidity'
+Plug 'pdurbin/vim-tsv'
 
 Plug 'lifthrasiir/hangeul.vim'
 Plug 'vim-airline/vim-airline'
