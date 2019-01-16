@@ -30,6 +30,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'tomlion/vim-solidity'
 Plug 'pdurbin/vim-tsv'
+Plug 'PProvost/vim-ps1'
 
 Plug 'lifthrasiir/hangeul.vim'
 Plug 'vim-airline/vim-airline'
