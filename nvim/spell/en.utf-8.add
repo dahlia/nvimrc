@@ -32,6 +32,7 @@ PyPy
 RPC
 RRS
 S3
+SDK
 SQLAlchemy
 SQLite
 TLS
@@ -46,6 +47,7 @@ backends
 blockchain
 changelog
 crowdsale
+cryptocurrencies
 cryptocurrency
 deserialize
 deserializer
