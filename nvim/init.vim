@@ -31,6 +31,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'tomlion/vim-solidity'
 Plug 'pdurbin/vim-tsv'
 Plug 'PProvost/vim-ps1'
+Plug 'rhysd/vim-github-actions'
 
 Plug 'lifthrasiir/hangeul.vim'
 Plug 'vim-airline/vim-airline'
