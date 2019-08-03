@@ -55,6 +55,7 @@ deserializing
 diff
 docstring
 earthreader
+façade
 filesystem
 freenode
 github
@@ -72,6 +73,7 @@ multicurrency
 multiplayer
 nginx
 offline
+phoneticize
 plugin
 polymorphism
 prebuilt
