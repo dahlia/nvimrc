@@ -126,9 +126,15 @@ tnoremap <C-w>l <C-\><C-N><C-w>l
 
 "ALE-related configurations.
 let g:ale_linters = {
-\    'haskell': ['stack-ghc-mod', 'hlint'],
-\    'rust': ['cargo'],
+\   'haskell': ['stack-ghc-mod', 'hlint'],
+\   'rust': ['cargo'],
 \}
+let b:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'css': ['prettier'],
+\   'javascript': ['prettier', 'eslint'],
+\}
+let g:ale_fix_on_save = 1
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
