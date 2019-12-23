@@ -191,10 +191,11 @@ if has("gui_running")
   set bg=dark
   set guioptions=egmrLt
   set linespace=1
+  set number
 endif
 
 "MacVim-specific configurations.
-if has("gui_macvim") || has("gui_vimr")
+if has("gui_macvim")
   set imd
   set guifont=Source_Code_Pro_Light:h16.00
 endif
