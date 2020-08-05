@@ -45,7 +45,9 @@ apps
 backend
 backends
 blockchain
+broadcasted
 changelog
+completer
 crowdsale
 cryptocurrencies
 cryptocurrency
@@ -78,10 +80,12 @@ phoneticize
 plugin
 polymorphism
 prebuilt
+precalculated
 prepend
 presale
 refactor
 refactored
+reorg
 serializer
 serializing
 serializing
@@ -91,6 +95,3 @@ travis
 underlayer
 url
 util
-broadcasted
-reorg
-precalculated
