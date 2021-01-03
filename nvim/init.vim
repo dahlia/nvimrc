@@ -33,6 +33,7 @@ Plug 'pdurbin/vim-tsv'
 Plug 'PProvost/vim-ps1'
 Plug 'rhysd/vim-github-actions'
 
+Plug 'tpope/vim-dispatch'
 Plug 'lifthrasiir/hangeul.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
