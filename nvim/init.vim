@@ -134,7 +134,7 @@ let g:ale_linters = {
 let b:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'css': ['prettier'],
-\   'javascript': ['prettier', 'eslint'],
+\   'typescript': ['deno'],
 \}
 let g:ale_fix_on_save = 1
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
