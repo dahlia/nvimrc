@@ -107,6 +107,7 @@ au FileType gitcommit setl spell
 let g:ale_linters = {
 \   'haskell': ['stack-ghc-mod', 'hlint'],
 \   'rust': ['cargo'],
+\   'typescript': ['deno'],
 \}
 let b:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -115,6 +116,10 @@ let b:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 let g:ale_deno_unstable = 1
+nmap gr <Plug>(ale_rename)
+nmap gR <Plug>(ale_find_reference)
+nmap gd <Plug>(ale_go_to_definition)
+nmap gD <Plug>(ale_go_to_type_definition)
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
