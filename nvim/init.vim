@@ -23,22 +23,13 @@ Plug 'lepture/vim-jinja'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
-Plug 'spoqa/nirum.vim'
-Plug 'pbrisbin/vim-syntax-shakespeare'
-Plug 'elmcast/elm-vim'
 Plug 'rust-lang/rust.vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'tomlion/vim-solidity'
 Plug 'pdurbin/vim-tsv'
 Plug 'PProvost/vim-ps1'
-Plug 'rhysd/vim-github-actions'
 
-Plug 'tpope/vim-dispatch'
-Plug 'lifthrasiir/hangeul.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
-Plug 'Shougo/unite.vim'
-Plug 'Shougo/vimfiler.vim'
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'simnalamburt/vim-mundo'
 Plug 'rhysd/committia.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -47,8 +38,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'junegunn/vim-slash'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'Shougo/vimshell.vim'
-Plug 'junegunn/vim-easy-align'
 Plug 'wellle/context.vim'
 Plug 'sgur/vim-editorconfig'
 
@@ -62,10 +51,6 @@ if has("macunix")
 else
   language en_US.utf8
 endif
-
-"Enable hangeul.vim
-let hangeul_enabled = 1
-let hangeul_hanja_path = resolve(expand('<sfile>:p:h:h') . '/hanja.txt')
 
 "Syntax highlighting.
 syntax on
@@ -100,7 +85,6 @@ set tabpagemax=25
 filetype plugin on
 
 "Some additional syntax highlighters.
-au! BufRead,BufNewFile *.wsgi setfiletype python
 au! BufRead,BufNewFile *.sass setfiletype sass
 au! BufRead,BufNewFile *.scss setfiletype scss
 au! BufRead,BufNewFile *.haml setfiletype haml
@@ -112,19 +96,12 @@ au FileType ruby   setl ts=2 sw=2 sts=2
 au FileType yaml   setl ts=2 sw=2 sts=2
 au FileType html   setl ts=2 sw=2 sts=2
 au FileType jinja  setl ts=2 sw=2 sts=2
-au FileType lua    setl ts=2 sw=2 sts=2
 au FileType haml   setl ts=2 sw=2 sts=2
 au FileType sass   setl ts=2 sw=2 sts=2
 au FileType scss   setl ts=2 sw=2 sts=2
 au FileType make   setl ts=4 sw=4 sts=4 noet
 au FileType rst    setl spell
 au FileType gitcommit setl spell
-
-"Terminal-related configurations.
-tnoremap <C-w>h <C-\><C-N><C-w>h
-tnoremap <C-w>j <C-\><C-N><C-w>j
-tnoremap <C-w>k <C-\><C-N><C-w>k
-tnoremap <C-w>l <C-\><C-N><C-w>l
 
 "ALE-related configurations.
 let g:ale_linters = {
@@ -171,9 +148,6 @@ let g:haskell_json          = 0
 let g:haskell_xml           = 0
 let g:haskell_hsp           = 0
 
-"Elm format
-let g:elm_format_autosave = 1
-
 "English spelling checker.
 setlocal spelllang=en_us
 
@@ -189,30 +163,6 @@ set nofoldenable
 "I dislike visual bell as well.
 set novisualbell
 
-"gVim-specific configurations (including MacVim).
-if has("gui_running")
-  set bg=dark
-  set guioptions=egmrLt
-  set linespace=1
-  set number
-endif
-
-"MacVim-specific configurations.
-if has("gui_macvim")
-  set imd
-  set guifont=Source_Code_Pro_Light:h16.00
-endif
-
-"GVim under GNOME
-if has("gui_gnome")
-  set guifont="Ubuntu Mono 11"
-endif
-
-"GVim under Windows
-if has("gui_win32")
-  set guifont=Consolas:h11:cANSI
-endif
-
 "vim-airline
 let g:airline_powerline_fonts = 1
 
@@ -221,19 +171,8 @@ set undofile
 set undodir=~/.config/nvim/undo
 nnoremap <F5> :MundoToggle
 
-"Use Vimfiler as default explorer like netrw
-let g:vimfiler_as_default_explorer = 1
-
 "deoplete
 let g:deoplete#enable_at_startup = 1
-
-"vim-easy-align
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
-
-"VimShell
-let g:vimshell_prompt_expr = '$USER . " " . fnamemodify(getcwd(), ":~") . " $ "'
-let g:vimshell_prompt_pattern = '^[a-z_-][a-z0-9_-]\{,31\} [~/][^$ ]* $ '
 
 "True colors
 if $TERM_PROGRAM == "iTerm.app" || has("gui_vimr")
