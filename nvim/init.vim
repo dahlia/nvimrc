@@ -28,7 +28,7 @@ Plug 'pdurbin/vim-tsv'
 Plug 'PProvost/vim-ps1'
 
 Plug 'vim-airline/vim-airline'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'simnalamburt/vim-mundo'
 Plug 'rhysd/committia.vim'
