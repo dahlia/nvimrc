@@ -177,7 +177,8 @@ set undodir=~/.config/nvim/undo
 nnoremap <F5> :MundoToggle
 
 "deoplete
-let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 0
+autocmd InsertEnter * call deoplete#enable()
 
 "True colors
 if $TERM_PROGRAM == "iTerm.app" || has("gui_vimr")

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Install neovim-python; vim-plug requires neovim-python
+# Install pynvim; vim-plug requires pynvim
 if [[ "$(command -v pip2)" != "" ]]; then
   pip2 install --user pynvim jedi
 fi
@@ -13,21 +13,22 @@ mkdir -p nvim/autoload
 curl -Lo nvim/autoload/plug.vim "$VIM_PLUG_URL"
 
 # Download hanja.txt
-curl -Lo hanja.txt \
-     https://github.com/choehwanjin/libhangul/raw/master/data/hanja/hanja.txt
+HANJA_URL=https://github.com/choehwanjin/libhangul/raw/master/data/hanja/hanja.txt
+curl -Lo hanja.txt "$HANJA_URL"
 
 # Link neovim configuration to ~/.config/nvim
-xdg_config_dir="$HOME/.config"
+if [[ "$XDG_CONFIG_HOME" = "" ]]; then
+  XDG_CONFIG_HOME="$HOME/.config"
+fi
 nvimrc_name="init.nvim"
 src_nvim_dir="$(pwd)/$(dirname "$0")/nvim"
 src_nvimrc="$src_nvim_dir/$nvimrc_name"
-dst_nvim_dir="$xdg_config_dir/nvim"
+dst_nvim_dir="$XDG_CONFIG_HOME/nvim"
 dst_nvimrc="$dst_nvim_dir/$nvimrc_name"
-echo "Neovim configuration directory: $dst_nvim_dir"
 if [[ ! -f "$dst_nvimrc" || "$(cat "$src_nvimrc")" != "$(cat "$dst_nvimrc")" ]]
 then
   rm -f "$dst_nvim_dir"
-  mkdir -p "$xdg_config_dir"
+  mkdir -p "$(dirname "$dst_nvim_dir")"
   ln -sfi "$src_nvim_dir" "$dst_nvim_dir"
 fi
 
