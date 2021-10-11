@@ -41,7 +41,9 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'wellle/context.vim'
 Plug 'sgur/vim-editorconfig'
 
-Plug 'wakatime/vim-wakatime'
+if !has("win32")
+  Plug 'wakatime/vim-wakatime'
+endif
 
 "End plugin list --------------------------------------------------------------
 call plug#end()
