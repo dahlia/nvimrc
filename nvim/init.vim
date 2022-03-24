@@ -38,7 +38,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'junegunn/vim-slash'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'wellle/context.vim'
 Plug 'sgur/vim-editorconfig'
 
 if !has("win32")
