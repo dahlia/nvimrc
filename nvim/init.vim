@@ -118,10 +118,11 @@ let b:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 let g:ale_deno_unstable = 1
-nmap gr <Plug>(ale_rename)
-nmap gR <Plug>(ale_find_reference)
-nmap gd <Plug>(ale_go_to_definition)
-nmap gD <Plug>(ale_go_to_type_definition)
+nmap gr :ALERename
+nmap gR :ALEFindReferences
+nmap gd :ALEGoToDefinition
+nmap gD :ALEGoToTypeDefinition
+nmap <silent> <C-]> :ALEGoToDefinition
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
