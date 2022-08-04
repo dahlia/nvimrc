@@ -185,7 +185,7 @@ autocmd InsertEnter * call deoplete#enable()
 if $TERM_PROGRAM == "iTerm.app" || $TERM_PROGRAM == "WezTerm" || has("gui_vimr")
   "True colors
   set termguicolors
-  colorscheme material-theme
+  colorscheme one
   set background=dark
 else
   colorscheme seoul256
