@@ -41,6 +41,8 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'wellle/context.vim'
 Plug 'sgur/vim-editorconfig'
 
+Plug 'github/copilot.vim'
+
 if !has("win32")
   Plug 'wakatime/vim-wakatime'
 endif
