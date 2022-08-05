@@ -40,6 +40,8 @@ Plug 'junegunn/vim-slash'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'sgur/vim-editorconfig'
 
+Plug 'github/copilot.vim'
+
 if !has("win32")
   Plug 'wakatime/vim-wakatime'
 endif
@@ -182,14 +184,19 @@ nnoremap <F5> :MundoToggle
 let g:deoplete#enable_at_startup = 0
 autocmd InsertEnter * call deoplete#enable()
 
-"True colors
-if $TERM_PROGRAM == "iTerm.app" || has("gui_vimr")
+if $TERM_PROGRAM == "iTerm.app" || $TERM_PROGRAM == "WezTerm" || has("gui_vimr")
+  "True colors
   set termguicolors
-  colorscheme material-theme
+  colorscheme one
   set background=dark
 else
   colorscheme seoul256
   set background=dark
+endif
+
+"Font
+if has("gui_vimr")
+  VimRSetFontAndSize "Fira Code Light", 14
 endif
 
 "Alias :W to :w
