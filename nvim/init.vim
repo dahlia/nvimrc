@@ -38,7 +38,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'junegunn/vim-slash'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'sgur/vim-editorconfig'
+Plug 'gpanders/editorconfig.nvim'
 
 Plug 'github/copilot.vim'
 
