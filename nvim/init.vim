@@ -157,6 +157,12 @@ let g:haskell_json          = 0
 let g:haskell_xml           = 0
 let g:haskell_hsp           = 0
 
+"GitHub Copilot
+if ($HOMEBREW_PREFIX != "" &&
+   \ filereadable($HOMEBREW_PREFIX."/opt/node@16/bin/node"))
+  let g:copilot_node_command = $HOMEBREW_PREFIX."/opt/node@16/bin/node"
+endif
+
 "English spelling checker.
 setlocal spelllang=en_us
 
