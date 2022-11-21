@@ -1,9 +1,10 @@
 #!/bin/bash
+set -e
+
 # Install pynvim; vim-plug requires pynvim
-if [[ "$(command -v pip2)" != "" ]]; then
-  pip2 install --user pynvim jedi
-fi
-if [[ "$(command -v pip3)" != "" ]]; then
+if command -v apt > /dev/null; then
+  sudo apt install python3-neovim
+elif command -v pip3 > /dev/null; then
   pip3 install --user pynvim jedi
 fi
 
