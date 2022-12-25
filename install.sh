@@ -14,7 +14,7 @@ mkdir -p nvim/autoload
 curl -Lo nvim/autoload/plug.vim "$VIM_PLUG_URL"
 
 # Download hanja.txt
-HANJA_URL=https://github.com/choehwanjin/libhangul/raw/master/data/hanja/hanja.txt
+HANJA_URL=https://github.com/choehwanjin/libhangul/raw/main/data/hanja/hanja.txt
 curl -Lo hanja.txt "$HANJA_URL"
 
 # Link neovim configuration to ~/.config/nvim

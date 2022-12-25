@@ -18,7 +18,7 @@ Invoke-WebRequest $VimPlugUrl -OutFile nvim\autoload\plug.vim
 
 # Download hanja.txt
 $HanjaUrl = `
-  "https://github.com/choehwanjin/libhangul/raw/master/data/hanja/hanja.txt"
+  "https://github.com/choehwanjin/libhangul/raw/main/data/hanja/hanja.txt"
 Invoke-WebRequest $HanjaUrl -OutFile hanja.txt
 
 # Link neovim configuration to %LOCALAPPDATA%\nvim
