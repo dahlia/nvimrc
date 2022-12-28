@@ -200,10 +200,5 @@ else
   set background=dark
 endif
 
-"Font
-if has("gui_vimr")
-  VimRSetFontAndSize "Fira Code Light", 14
-endif
-
 "Alias :W to :w
 cnoreabbrev W w
