@@ -2,8 +2,8 @@
 set -e
 
 # Install pynvim; vim-plug requires pynvim
-if command -v apt > /dev/null; then
-  sudo apt install python3-neovim
+if command -v apt-get > /dev/null; then
+  sudo apt-get install python3-neovim
 elif command -v pip3 > /dev/null; then
   pip3 install --user pynvim jedi
 fi
