@@ -190,7 +190,8 @@ nnoremap <F5> :MundoToggle
 let g:deoplete#enable_at_startup = 0
 autocmd InsertEnter * call deoplete#enable()
 
-if $TERM_PROGRAM == "iTerm.app" || $TERM_PROGRAM == "WezTerm" || has("gui_vimr")
+if $TERM_PROGRAM == "iTerm.app" || $TERM_PROGRAM == "WezTerm" ||
+   \ $TERM_PROGRAM == "WarpTerminal" || has("gui_vimr")
   "True colors
   set termguicolors
   colorscheme one
