@@ -162,6 +162,9 @@ if ($HOMEBREW_PREFIX != "" &&
    \ filereadable($HOMEBREW_PREFIX."/opt/node@16/bin/node"))
   let g:copilot_node_command = $HOMEBREW_PREFIX."/opt/node@16/bin/node"
 endif
+let g:copilot_filetypes = {
+  \ 'markdown': v:true,
+  \ }
 
 "English spelling checker.
 setlocal spelllang=en_us
