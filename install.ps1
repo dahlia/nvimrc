@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 
 # Install pynvim; vim-plug requires pynvim
 if (Get-Command -Name pip3 -ErrorAction SilentlyContinue) {
-  pip3 install --user pynvim jedi
+  pip3 install --user --break-system-packages pynvim jedi
 }
 
 # Install vim-plug

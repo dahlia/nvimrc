@@ -5,7 +5,7 @@ set -e
 if command -v apt-get > /dev/null; then
   sudo apt-get install python3-neovim
 elif command -v pip3 > /dev/null; then
-  pip3 install --user pynvim jedi
+  pip3 install --user --break-system-packages pynvim jedi
 fi
 
 # Install vim-plug
