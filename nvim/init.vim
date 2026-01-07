@@ -34,8 +34,6 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'rhysd/committia.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'tpope/vim-fugitive'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
 Plug 'junegunn/vim-slash'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'gpanders/editorconfig.nvim'
@@ -189,9 +187,6 @@ set undofile
 set undodir=~/.config/nvim/undo
 nnoremap <F5> :MundoToggle
 
-"deoplete
-let g:deoplete#enable_at_startup = 0
-autocmd InsertEnter * call deoplete#enable()
 
 if $TERM_PROGRAM == "iTerm.app" || $TERM_PROGRAM == "WezTerm" ||
    \ $TERM_PROGRAM == "WarpTerminal" || has("gui_vimr")
