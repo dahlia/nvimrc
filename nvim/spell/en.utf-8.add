@@ -11,6 +11,7 @@ blockchain
 broadcasted
 changelog
 Changelog
+combinator
 completer
 CORS
 CPython
@@ -25,8 +26,8 @@ docstring
 earthreader
 Ethereum
 executables
-façade
 Facebook
+façade
 Fedify
 fediverse
 FFI
@@ -46,6 +47,7 @@ Hong
 HTTPS
 idempotency
 IDL
+initializer
 inspectability
 inspectable
 iOS
@@ -70,6 +72,8 @@ NuGet
 OAuth
 offline
 OpenTelemetry
+Optique
+parsers
 phoneticize
 plugin
 polymorphism
@@ -103,5 +107,3 @@ util
 VM
 Wikipedia
 WSGI
-initializer
-Optique
