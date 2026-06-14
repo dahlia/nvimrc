@@ -113,6 +113,7 @@ let g:ale_linters = {
 let b:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'css': ['prettier'],
+\   'markdown': [],
 \   'typescript': ['deno'],
 \}
 let g:ale_fix_on_save = 1
